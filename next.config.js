@@ -6,6 +6,10 @@ const config = {
     // your project has ESLint errors.
     ignoreDuringBuilds: true,
   },
+  typescript: {
+    // check on CI
+    ignoreBuildErrors: true,
+  },
   compiler: {
     emotion: {},
   },

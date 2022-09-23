@@ -28,6 +28,6 @@
       "~/*": ["src/*"]
     }
   },
-  "include": ["src", "next-env.d.ts"],
+  "include": ["src", "next-env.d.ts", "firebase-functions.js", "next.config.js"],
   "exclude": ["node_modules"]
 }
