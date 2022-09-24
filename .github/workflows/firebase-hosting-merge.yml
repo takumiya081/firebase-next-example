@@ -22,7 +22,7 @@ jobs:
         run: yarn install --frozen-lockfile
 
       - name: build
-        run: yarn build
+        run: yarn build && yarn export
 
       - name: Install firebase-tools
         run: npm install -g firebase-tools & npx firebase-tools --open-sesame frameworkawareness

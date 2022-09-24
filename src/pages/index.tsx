@@ -1,5 +1,4 @@
 import React from 'react';
-import Image from 'next/future/image';
 
 import {Button} from '@mantine/core';
 
@@ -11,7 +10,8 @@ const IndexPage = (): JSX.Element => {
     <>
       this is index<Button>test</Button>
       <div>
-        <Image alt="" src={img} style={{width: '100%', height: 'auto'}} />
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img alt="" src={img.src} style={{width: '100%', height: 'auto'}} />
       </div>
     </>
   );
