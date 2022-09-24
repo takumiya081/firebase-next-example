@@ -9,9 +9,10 @@
     "node": "16"
   },
   "scripts": {
-    "prepare": "is-ci || husky install",
+    "prepare": "node --eval 'process.exit(process.env.NODE_ENV === `production` ? 0 : 1)' || is-ci || husky install",
     "dev": "next",
     "build": "next build",
+    "export": "next export",
     "start": "next start",
     "lint:eslint": "eslint .",
     "typecheck": "tsc --noEmit"
