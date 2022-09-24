@@ -1,17 +1,20 @@
 {
   "name": "next-firebase",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "firebase-functions.js",
   "license": "MIT",
+  "private": "true",
   "engines": {
     "npm": ">=7.0.0",
-    "node": ">=16.0.0"
+    "node": "16"
   },
   "scripts": {
-    "dev": "next dev",
+    "prepare": "is-ci || husky install",
+    "dev": "next",
     "build": "next build",
     "start": "next start",
-    "lint:eslint": "eslint ."
+    "lint:eslint": "eslint .",
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
     "@emotion/react": "11.10.4",
@@ -21,6 +24,7 @@
     "@mantine/hooks": "5.4.0",
     "@mantine/next": "5.4.0",
     "firebase": "9.10.0",
+    "firebase-functions": "^3.24.0",
     "next": "12.3.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
@@ -51,6 +55,7 @@
     "eslint-plugin-storybook": "0.6.4",
     "eslint-plugin-testing-library": "5.6.4",
     "husky": "8.0.1",
+    "is-ci": "3.0.1",
     "jest": "29.0.3",
     "jest-environment-jsdom": "^29.0.3",
     "lint-staged": "13.0.3",

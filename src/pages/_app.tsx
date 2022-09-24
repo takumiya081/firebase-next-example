@@ -13,7 +13,7 @@ const MyApp = ({Component, pageProps}: AppProps) => (
     <Head>
       <meta content="minimum-scale=1, initial-scale=1, width=device-width" name="viewport" />
     </Head>
-    <MantineProvider withGlobalStyles>
+    <MantineProvider withCSSVariables withGlobalStyles withNormalizeCSS>
       <Component {...pageProps} />
     </MantineProvider>
   </>

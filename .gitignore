@@ -1,6 +1,16 @@
 # Created by https://www.toptal.com/developers/gitignore/api/macos,windows,node,nextjs
 # Edit at https://www.toptal.com/developers/gitignore?templates=macos,windows,node,nextjs
 
+### Firebase ###
+.idea
+**/node_modules/*
+**/.firebaserc
+
+### Firebase Patch ###
+.runtimeconfig.json
+.firebase/
+
+
 ### macOS ###
 # General
 .DS_Store
